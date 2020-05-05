@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="713.0" prefWidth="1219.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.thinklance.pidev.GUI.ModifierEvenementController">
+   <children>
+      <AnchorPane id="AnchorPane" fx:id="nomId" layoutX="10.0" layoutY="10.0" prefHeight="713.0" prefWidth="1219.0">
+         <children>
+            <Label layoutX="39.0" layoutY="37.0" prefHeight="29.0" prefWidth="207.0" style="-fx-font-size: 20; -fx-font-weight: bold; -fx-text-fill: #7387A8;" text="Modifier Catégorie" />
+            <Separator layoutX="23.0" layoutY="75.0" prefHeight="4.0" prefWidth="1213.0" />
+            <TextArea id="description" fx:id="description_Id" layoutX="39.0" layoutY="198.0" prefHeight="200.0" prefWidth="200.0" promptText="Description" />
+            <JFXButton id="Ajouter" fx:id="modifer" layoutX="39.0" layoutY="449.0" onAction="#ModifierAction" prefHeight="30.0" prefWidth="90.0" style="-fx-background-color: #00C0EF;" text="Modifier" textFill="WHITE">
+               <font>
+                  <Font name="Roboto Medium" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="retourId" layoutX="1099.0" layoutY="657.0" onAction="#retourAction" prefHeight="30.0" prefWidth="90.0" style="-fx-background-color: #00C0EF;" text="Retour" textFill="WHITE">
+               <font>
+                  <Font name="Roboto Medium" size="14.0" />
+               </font>
+            </JFXButton>
+            <TextField fx:id="tf_nom_id" layoutX="39.0" layoutY="123.0" promptText="Nom" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

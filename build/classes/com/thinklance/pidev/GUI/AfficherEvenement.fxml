@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="713.0" prefWidth="1219.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.thinklance.pidev.GUI.AfficherEvenementController">
+   <children>
+      <TableView fx:id="table_evenement" layoutX="57.0" layoutY="85.0" prefHeight="261.0" prefWidth="690.0">
+        <columns>
+          <TableColumn fx:id="id_id" prefWidth="75.0" text="id" />
+          <TableColumn fx:id="id_nom" prefWidth="75.0" text="Nom" />
+            <TableColumn fx:id="id_lieu" prefWidth="75.0" text="Lieu" />
+            <TableColumn fx:id="id_desc" prefWidth="75.0" text="Description" />
+            <TableColumn fx:id="id_datedeb" prefWidth="75.0" text="Date_debut" />
+            <TableColumn fx:id="id_datefin" prefWidth="75.0" text="Date_Fin" />
+            <TableColumn fx:id="id_nbrplace" prefWidth="75.0" text="Nbr_place" />
+            <TableColumn fx:id="id_prix" prefWidth="75.0" text="Prix" />
+            <TableColumn fx:id="id_categorie" prefWidth="75.0" text="Categorie" />
+        </columns>
+      </TableView>
+      <Label layoutX="29.0" layoutY="27.0" prefHeight="29.0" prefWidth="207.0" style="-fx-font-size: 20; -fx-font-weight: bold; -fx-text-fill: #7387A8;" text="Les événements " />
+      <Separator layoutX="13.0" layoutY="65.0" prefHeight="4.0" prefWidth="1213.0" />
+      <Label layoutX="29.0" layoutY="369.0" prefHeight="29.0" prefWidth="207.0" style="-fx-font-size: 20; -fx-font-weight: bold; -fx-text-fill: #7387A8;" text="Les catégories" />
+      <Separator layoutX="13.0" layoutY="407.0" prefHeight="4.0" prefWidth="1213.0" />
+      <TableView fx:id="tableau_categorie" layoutX="57.0" layoutY="428.0" prefHeight="200.0" prefWidth="232.0">
+        <columns>
+          <TableColumn fx:id="idc_id" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="idc_nom" prefWidth="75.0" text="Nom" />
+            <TableColumn fx:id="idc_desc" prefWidth="75.0" text="Description" />
+        </columns>
+      </TableView>
+      <JFXButton fx:id="ajouterC" layoutX="329.0" layoutY="483.0" onAction="#AjouterCategorie" prefHeight="30.0" prefWidth="165.0" style="-fx-background-color: #00C0EF;" text="Ajouter des catégorie" textFill="WHITE">
+         <font>
+            <Font name="Roboto Medium" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="SupprimerId" layoutX="329.0" layoutY="528.0" onAction="#supprimerCategorie" prefHeight="30.0" prefWidth="165.0" style="-fx-background-color: #00C0EF;" text="Supprimer" textFill="WHITE">
+         <font>
+            <Font name="Roboto Medium" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="modifierid" layoutX="329.0" layoutY="571.0" onAction="#ModifierCategorie" prefHeight="30.0" prefWidth="165.0" style="-fx-background-color: #00C0EF;" text="Modifier" textFill="WHITE">
+         <font>
+            <Font name="Roboto Medium" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="SupprimerId1" layoutX="777.0" layoutY="201.0" onAction="#SupprimerEvenement" prefHeight="30.0" prefWidth="165.0" style="-fx-background-color: #00C0EF;" text="Supprimer" textFill="WHITE">
+         <font>
+            <Font name="Roboto Medium" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="retouuur" layoutX="1034.0" layoutY="669.0" onAction="#retour" prefHeight="30.0" prefWidth="165.0" style="-fx-background-color: #00C0EF;" text="Retour" textFill="WHITE">
+         <font>
+            <Font name="Roboto Medium" size="14.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
